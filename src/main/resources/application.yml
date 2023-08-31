@@ -1,0 +1,23 @@
+server:
+  port: 0
+#  port: 9003
+spring:
+  application:
+    name: store-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/ceo?serverTimezone=Asia/Seoul
+    username: root
+    password: 1q2w3e4r!!
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+jwt:
+  secret: febnsdl1324r1352514245123rfndlsasdfnk124135135132nlke31124124
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.184:8761/eureka
+  instance:
+    prefer-ip-address: true
